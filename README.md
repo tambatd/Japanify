@@ -4,9 +4,9 @@ React JS web app to discover new Japanese artists through your Spotify listening
 ## Installation 💽
 Once this repository is cloned, simply use 
 
-'''bash
+```bash
 npm install
-'''
+```
 You can find specific dependencies in package.json.
 
 ## Usage ⚙️

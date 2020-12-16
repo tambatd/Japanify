@@ -6,7 +6,11 @@ Japanify relies on spotify to retreave data and reccommend music:
 Before using, please create a spotify developer account, and app here 
 https://developer.spotify.com/dashboard/
 
-After, copy the client key *not secret* to line 26 in App.js
+Make sure to add http://localhost:3000/ to the list of redirect URIs
+This will allow you to run the app locally 
+
+
+After, copy the client key —*not secret*— to line 26 in App.js
 ```javascript
 const clientId = "String_of_numbers";
 ```

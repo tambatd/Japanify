@@ -1,0 +1,328 @@
+.App {
+  text-align: center;
+}
+/** redundent code saved incase we use the rotating disk image again**/
+/*.App-logo { 
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  height: 100%;
+  }
+
+body {
+  animation: shiftpink 15s infinite;
+  color: #eee;
+  font-family: Helvetica, Arial;
+  font-size: 3vmin;
+}
+
+.hidden {
+  display: none;
+}
+
+.header{
+  margin-top: 32px;
+}
+/** Buttons **/
+
+.btn {
+  background-color: #83EFEB;
+  border-radius: 2em;
+  border: 0.2em solid #83EFEB;
+  color: #333;
+  cursor: pointer;
+  font-size: 3vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  background: #7ce4e0;
+  color: #333;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+/** css for playlist button **/
+.button3{
+  display:inline-block;
+  position: relative;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: Helvetica, Arial;
+  font-weight:300;
+  color:#ffffff;
+  background-color:#1d65c4;
+  text-align:center;
+  transition: all 0.2s;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+ }
+ .button3:hover{
+   background-color:#4095c6;
+   cursor: pointer;
+ }
+ .button_background{
+  background: 
+  linear-gradient(
+      to bottom,
+      #f35bb1,     
+      #207cf5,
+      #207cf5,
+      #207cf5
+  );
+  /**background-color: #207cf5;**/
+  height: 210px;
+  padding-top: 3%;
+}
+ @media all and (max-width:30em){
+   a.button3{
+    display:block;
+    margin:0.2em auto;
+   }
+ }
+/** Background **/
+
+.box3{
+  width: 100%;
+  height: 100%;
+  background-color: #F279DC;
+  justify-content: center;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+}
+
+.imgcircle{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.pink {
+  width: 100%;
+  height: auto;
+  height: max-content;
+  animation: shiftpink 15s infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}*/
+
+/** css for main background and waving hand**/
+.App-header {
+  animation: shiftpink 15s infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+@keyframes shiftpink {
+  0%, 100% {
+    background-color: #FFADD4;
+  }
+  50% {
+    background-color: #ff8fc5;
+  }
+}
+
+@keyframes wave-animation {
+ 0% { transform: rotate( 0.0deg) }
+ 2.5% { transform: rotate(14.0deg) }  
+ 5% { transform: rotate(-8.0deg) }
+ 7.5% { transform: rotate(22.0deg) }
+ 15% { transform: rotate( 0.0deg) }  
+100% { transform: rotate( 0.0deg) }
+}
+
+.wave{
+  animation-name: wave-animation;
+  animation-duration: 10s;  
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+/** css for banner **/
+#bar {
+  height: 200px;
+  background: #000000 0px 0px url('./songs2.png') repeat-x;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {background-position: 1492px 0;}
+  to {background-position: 0 0;}
+}
+/**css for arrow**/
+#arrow-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-left: calc(50% - 30px);
+  margin-right: calc(50% - 30px);
+  margin-top: 30px;
+}
+.arrow-border {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.arrow {
+  position: absolute;
+  bottom: 24px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  right: 19px;
+}
+
+.down {
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+} 
+  
+.pulse {
+    border-radius: 50%;
+    border: 2px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: calc(50% - 30px);
+    margin-right: calc(50% - 30px);
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    box-shadow: 0 0 1px 2px #ffffff;
+    animation-delay: 2s;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.9, 0.9);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+/** css for changing button **/
+.button_circle {
+  width: 120px;
+  height: 120px;
+  background: #1d65c4;
+  border-radius: 50%;
+}
+
+/** css for the recc and song box **/
+.SongBox{
+  width: 100%;
+  height: auto;
+  /**background-color: #BD4084;**/
+}
+
+.RecomendedArtistBox{
+  width: 100%;
+  height: 100%;
+  /**background-color: #f14eab;**/
+}
+.insidebox{
+  width: 75%;
+  height: 35%;
+  /**background-color: #f14eab;**/
+  border: 2px solid #E9EBED;
+  border-radius: 25px;
+  position:relative;
+  margin: auto;
+  padding: .5%;
+}
+
+.table_left_align {
+  text-align: left;
+}
+
+.coolback {
+  background: 
+        linear-gradient(
+            to bottom,
+            #CE405F,     
+            #b94686,
+            #b94686,
+            #f35bb1,
+            #f35bb1
+        );
+
+  width: 100%;
+}
+
+.footeronbottom{
+  height: 10%;
+  width: 100%;
+  background-color: #F778BC;
+  text-align: left;
+  padding: 1%
+}
+
+.footertext{
+  height: auto;
+  margin-left: auto;
+  color: #E9EBED;
+  padding: .2%;
+  text-decoration: none;
+}
+
+#centerer{
+  height: auto;
+  color: #eee;
+  border: 3px solid #eee;
+  padding: .2%
+}

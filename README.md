@@ -1,6 +1,6 @@
 # 🌸 Japanify.io 🌸
 React JS web app to discover new Japanese artists through your Spotify listening patterns
-https://github.com/tambatd/Japanify/blob/master/Japanify_Image.PNG?raw=true
+<img src="https://github.com/tambatd/Japanify/blob/master/Japanify_Image.PNG"/>
 ## Setup 🧮
 Japanify relies on spotify to retreave data and reccommend music:
 
